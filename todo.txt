@@ -1,0 +1,23 @@
+Phase 1: Landing page + responsive UI
+Phase 2: Menu page with static data
+Phase 3: Learn Next.js data fetching and replace static data
+Phase 4: Meal details with dynamic routes
+Phase 5: Shopping cart
+Phase 6: Authentication
+Phase 7: Backend (orders, users, etc.)
+Phase 8: Database
+Phase 9: Deploy
+
+Features:
+Beautiful landing page 
+Dark Mode
+Browse restaurants (or one restaurant if you want to start small)
+Browse menu
+Search meals
+Filter by category
+Meal details page
+Add to cart
+Fake checkout at first
+User authentication later
+Order history later
+Favorites (optional)
