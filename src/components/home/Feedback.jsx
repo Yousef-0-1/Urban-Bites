@@ -45,7 +45,7 @@ export default function Feedback() {
           />
         </svg>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12 max-lg:w-[90%] mx-auto">
         {reviews.map((review) => (
           <div
             className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6"

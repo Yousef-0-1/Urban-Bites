@@ -10,7 +10,7 @@ export default function Newsletter() {
             Stay updated with the latest news and offers from our company.
           </p>
         </div>
-        <form className="rounded-full bg-white dark:bg-neutral-700 p-2 shadow-md flex items-center justify-between w-full max-w-md">
+        <form className="rounded-full bg-white dark:bg-neutral-700 p-2 shadow-md flex items-center justify-between w-full max-w-md max-lg:w-[90%]">
           <input
             type="email"
             className="flex-1 px-4 py-2 outline-none w-full bg-white dark:bg-neutral-700 text-neutral-900 dark:text-white placeholder:text-neutral-400 dark:placeholder:text-neutral-200"

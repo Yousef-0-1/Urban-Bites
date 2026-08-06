@@ -1,0 +1,313 @@
+[
+  {
+    "id": 1,
+    "title": "Smokey BBQ Bacon Burger",
+    "description": "Double beef patty, crispy bacon, smoked cheddar, and homemade BBQ sauce",
+    "image": "/mealspics/Smokey-BBQ-Bacon-Burger.jpg",
+    "price": 280,
+    "category": "Burgers",
+    "rating": 4.9,
+    "calories": 820,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Classic Burger",
+    "description": "A Very Classic Tender Juicy beef patty with cheddar cheese",
+    "image": "/mealspics/classic-burger.png",
+    "price": 220,
+    "category": "Burgers",
+    "rating": 4.8,
+    "calories": 650,
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Mushroom Swiss Burger",
+    "description": "Flame-grilled beef patty topped with sautéed wild mushrooms and melted Swiss cheese",
+    "image": "/mealspics/Mushroom-Swiss-Burger.jpg",
+
+    "price": 250,
+    "category": "Burgers",
+    "rating": 4.7,
+    "calories": 710,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Spicy Jalapeño Crunch",
+    "description": "Angus beef, pepper jack cheese, pickled jalapeños, crispy fried onions, and chipotle mayo",
+    "image": "/mealspics/Spicy-Jalapeño-Crunch.jpg",
+    "price": 240,
+    "category": "Burgers",
+    "rating": 4.6,
+    "calories": 750,
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "Crispy Buffalo Chicken Burger",
+    "description": "Fried chicken breast tossed in buffalo sauce, cool ranch, and shredded lettuce",
+    "image": "/mealspics/Crispy-Buffalo-Chicken-Burger.jpg",
+    "price": 210,
+    "category": "Burgers",
+    "rating": 4.8,
+    "calories": 690,
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Margherita Supreme",
+    "description": "Classic San Marzano tomato sauce, fresh mozzarella, extra virgin olive oil, and fresh basil leaves",
+    "image": "/mealspics/Margherita-Supreme.jpg",
+    "price": 210,
+    "category": "Pizzas",
+    "rating": 4.9,
+    "calories": 850,
+    "featured": true
+  },
+  {
+    "id": 7,
+    "title": "Double Pepperoni Feast",
+    "description": "Loaded with crispy cup-and-char pepperoni, mozzarella, and tangy house tomato sauce",
+    "image": "/mealspics/Double-Pepperoni-Feast.jpg",
+    "price": 270,
+    "category": "Pizzas",
+    "rating": 4.8,
+    "calories": 1100,
+    "featured": true
+  },
+  {
+    "id": 8,
+    "title": "Quattro Formaggi",
+    "description": "Rich blend of mozzarella, gorgonzola, parmesan, and creamy fontina with a garlic oil base",
+    "image": "/mealspics/Quattro-Formaggi.jpg",
+    "price": 260,
+    "category": "Pizzas",
+    "rating": 4.7,
+    "calories": 980,
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "BBQ Chicken & Red Onion",
+    "description": "Grilled chicken breast, smoky BBQ sauce base, red onions, cilantro, and smoked gouda",
+    "image": "/mealspics/BBQ-Chicken-&-Red-Onion.jpg",
+    "price": 255,
+    "category": "Pizzas",
+    "rating": 4.6,
+    "calories": 920,
+    "featured": false
+  },
+  {
+    "id": 10,
+    "title": "Spicy Truffle Mushroom",
+    "description": "Wild roasted mushrooms, black truffle cream sauce, mozzarella, chili flakes, and fresh arugula",
+    "image": "/mealspics/Spicy-Truffle-Mushroom.jpg",
+    "price": 290,
+    "category": "Pizzas",
+    "rating": 4.8,
+    "calories": 890,
+    "featured": false
+  },
+  {
+    "id": 11,
+    "title": "Classic Caesar Salad",
+    "description": "Crisp romaine lettuce, garlic butter croutons, shaved parmesan, and rich creamy Caesar dressing",
+    "price": 150,
+    "category": "Salads",
+    "rating": 4.8,
+    "calories": 380,
+    "featured": true
+  },
+  {
+    "id": 12,
+    "title": "Greek Garden Salad",
+    "description": "Cucumbers, vine-ripened tomatoes, kalamata olives, red onion, and creamy feta with oregano vinaigrette",
+    "price": 160,
+    "category": "Salads",
+    "rating": 4.7,
+    "calories": 320,
+    "featured": true
+  },
+  {
+    "id": 13,
+    "title": "Grilled Chicken Avocado",
+    "description": "Tender grilled chicken, sliced avocado, cherry tomatoes, sweet corn, and mixed greens with lime cilantro dressing",
+    "price": 210,
+    "category": "Salads",
+    "rating": 4.9,
+    "calories": 490,
+    "featured": false
+  },
+  {
+    "id": 14,
+    "title": "Quinoa & Roasted Veggie",
+    "description": "Fluffy quinoa, roasted zucchini, bell peppers, walnuts, and baby spinach drizzled with balsamic glaze",
+    "price": 180,
+    "category": "Salads",
+    "rating": 4.6,
+    "calories": 410,
+    "featured": false
+  },
+  {
+    "id": 15,
+    "title": "Spicy Thai Crunch Salad",
+    "description": "Shredded cabbage, carrots, edamame, roasted peanuts, and crispy wontons with spicy peanut dressing",
+    "price": 170,
+    "category": "Salads",
+    "rating": 4.7,
+    "calories": 360,
+    "featured": false
+  },
+  {
+    "id": 16,
+    "title": "Classic Dragon Roll",
+    "description": "Eel and cucumber inside, topped with thin avocado slices, unagi sauce, and toasted sesame seeds",
+    "price": 280,
+    "category": "Sushi",
+    "rating": 4.9,
+    "calories": 420,
+    "featured": true
+  },
+  {
+    "id": 17,
+    "title": "Spicy Tuna Roll",
+    "description": "Fresh sriracha-seasoned yellowfin tuna, cucumber, scallions, and spicy Japanese mayo drizzle",
+    "price": 240,
+    "category": "Sushi",
+    "rating": 4.8,
+    "calories": 350,
+    "featured": true
+  },
+  {
+    "id": 18,
+    "title": "Salmon & Avocado Nigiri Set",
+    "description": "6 pieces of premium Atlantic salmon nigiri served over seasoned sushi rice with fresh avocado",
+    "price": 260,
+    "category": "Sushi",
+    "rating": 4.7,
+    "calories": 390,
+    "featured": false
+  },
+  {
+    "id": 19,
+    "title": "Crispy Crunchy California Roll",
+    "description": "Crab sticks, avocado, and cucumber rolled in flying fish roe with a crunchy tempura topping",
+    "price": 220,
+    "category": "Sushi",
+    "rating": 4.6,
+    "calories": 380,
+    "featured": false
+  },
+  {
+    "id": 20,
+    "title": "Tempura Shrimp Dynamite",
+    "description": "Crispy shrimp tempura, cream cheese, jalapeño, topped with spicy mayo and sweet soy reduction",
+    "price": 275,
+    "category": "Sushi",
+    "rating": 4.8,
+    "calories": 460,
+    "featured": false
+  },
+  {
+    "id": 21,
+    "title": "Creamy Fettuccine Alfredo",
+    "description": "Fettuccine tossed in a rich garlic parmesan cream sauce with fresh parsley",
+    "price": 210,
+    "category": "Pasta",
+    "rating": 4.8,
+    "calories": 780,
+    "featured": true
+  },
+  {
+    "id": 22,
+    "title": "Spaghetti Bolognese",
+    "description": "Classic slow-simmered minced beef ragù over al dente spaghetti with shaved parmesan",
+    "price": 230,
+    "category": "Pasta",
+    "rating": 4.9,
+    "calories": 710,
+    "featured": true
+  },
+  {
+    "id": 23,
+    "title": "Penne Alla Vodka",
+    "description": "Penne pasta coated in a silky tomato-cream vodka sauce with crispy pancetta bits",
+    "price": 220,
+    "category": "Pasta",
+    "rating": 4.7,
+    "calories": 690,
+    "featured": false
+  },
+  {
+    "id": 24,
+    "title": "Pesto Chicken Farfalle",
+    "description": "Bowtie pasta, grilled chicken breast, and cherry tomatoes tossed in house-made basil pesto",
+    "price": 240,
+    "category": "Pasta",
+    "rating": 4.8,
+    "calories": 740,
+    "featured": false
+  },
+  {
+    "id": 25,
+    "title": "Spicy Shrimp Arrabbiata",
+    "description": "Sautéed jumbo shrimp and penne in a fiery tomato sauce with crushed red pepper and garlic",
+    "price": 265,
+    "category": "Pasta",
+    "rating": 4.6,
+    "calories": 580,
+    "featured": false
+  },
+  {
+    "id": 26,
+    "title": "Molten Chocolate Lava Cake",
+    "description": "Warm dark chocolate cake with a rich molten center, served with a scoop of vanilla bean gelato",
+    "price": 140,
+    "category": "Desserts",
+    "rating": 4.9,
+    "calories": 520,
+    "featured": true
+  },
+  {
+    "id": 27,
+    "title": "Classic New York Cheesecake",
+    "description": "Rich and creamy baked cheesecake on a graham cracker crust with a wild berry compote",
+    "price": 130,
+    "category": "Desserts",
+    "rating": 4.8,
+    "calories": 480,
+    "featured": true
+  },
+  {
+    "id": 28,
+    "title": "Traditional Tiramisu",
+    "description": "Espresso-soaked ladyfingers layered with whipped mascarpone cream and dusted with cocoa powder",
+    "price": 135,
+    "category": "Desserts",
+    "rating": 4.8,
+    "calories": 430,
+    "featured": false
+  },
+  {
+    "id": 29,
+    "title": "Churros with Warm Nutella",
+    "description": "Crispy fried dough sticks coated in cinnamon sugar, served with a warm chocolate dipping sauce",
+    "price": 110,
+    "category": "Desserts",
+    "rating": 4.7,
+    "calories": 550,
+    "featured": false
+  },
+  {
+    "id": 30,
+    "title": "Salted Caramel Brownie",
+    "description": "Fudgy chocolate brownie laced with gooey salted caramel and toasted pecans",
+    "price": 120,
+    "category": "Desserts",
+    "rating": 4.6,
+    "calories": 460,
+    "featured": false
+  }
+]

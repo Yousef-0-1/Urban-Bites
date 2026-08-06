@@ -6,18 +6,18 @@ const handleSearch = (e) => {
 export default function Hero() {
   return (
     <section className="container flex items-center justify-center flex-col-reverse lg:flex-row gap-8 mx-auto py-16">
-      <div className="flex-1 mx-auto text-center lg:text-left gap-12 flex flex-col items-center   lg:items-start">
+      <div className="flex-1 mx-auto text-center lg:text-left gap-12 flex flex-col items-center lg:items-start max-lg:w-[90%]">
         <h1 className="text-6xl font-bold ">Welcome to Urban Bites</h1>
         <p className="text-xl ">
           Your favorite meals delivered to your doorstep.
         </p>
         <form
           onSubmit={handleSearch}
-          className="rounded-full bg-white dark:bg-neutral-800 p-2 shadow-md flex items-center justify-between w-full max-w-md"
+          className=" rounded-full bg-white dark:bg-neutral-800 p-2 shadow-md flex items-center justify-between w-full max-w-md"
         >
           <input
             type="text"
-            className="flex-1 px-4 py-2 outline-none w-full bg-transparent text-neutral-900 dark:text-white placeholder:text-neutral-400 dark:placeholder:text-neutral-500"
+            className="flex-1 px-4 p-2 outline-none w-full bg-transparent text-neutral-900 dark:text-white placeholder:text-neutral-400 dark:placeholder:text-neutral-500"
             placeholder="Search for dishes..."
           />
           <button
