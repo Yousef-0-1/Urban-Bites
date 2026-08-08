@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useCartStore } from "@/lib/store/cartStore";
 
 export default function CartItem({ item }) {
+  const removeFromCart = useCartStore((state) => state.removeFromCart);
+
   return (
     <article className="flex flex-col gap-4 rounded-[2rem] border border-neutral-200 bg-white/95 p-5 shadow-sm shadow-neutral-200/60 transition hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-950/90 dark:shadow-black/20">
       <div className="flex gap-4 md:gap-6">
@@ -51,14 +54,12 @@ export default function CartItem({ item }) {
               </span>
             </div>
 
-            <div className="flex flex-wrap gap-2">
-              <button className="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition hover:border-red-500 hover:text-red-600 dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-200 dark:hover:border-red-500 dark:hover:text-red-400">
-                Remove
-              </button>
-              <button className="rounded-full bg-red-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-red-600">
-                Save
-              </button>
-            </div>
+            <button
+              className="rounded-full border border-neutral-200 bg-white px-4 py-2 text-sm text-neutral-700 transition hover:border-red-500 hover:text-red-600 dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-200 dark:hover:border-red-500 dark:hover:text-red-400 cursor-pointer"
+              onClick={() => removeFromCart(item.id)}
+            >
+              Remove
+            </button>
           </div>
         </div>
       </div>

@@ -1,38 +1,17 @@
+"use client";
 import CartItem from "@/components/ui/CartItem";
-
-const cartItems = [
-  {
-    id: 1,
-    title: "Smokey BBQ Bacon Burger",
-    description:
-      "Double beef patty, crispy bacon, smoked cheddar, and homemade BBQ sauce.",
-    category: "Burgers",
-    image: "/mealspics/Smokey-BBQ-Bacon-Burger.jpg",
-    price: 280,
-    calories: 820,
-    quantity: 2,
-  },
-  {
-    id: 2,
-    title: "Margherita Supreme",
-    description:
-      "Classic San Marzano tomato sauce, fresh mozzarella, extra virgin olive oil, and basil.",
-    category: "Pizzas",
-    image: "/mealspics/Margherita-Supreme.jpg",
-    price: 210,
-    calories: 850,
-    quantity: 1,
-  },
-];
-
-const subtotal = cartItems.reduce(
-  (sum, item) => sum + item.price * item.quantity,
-  0,
-);
-const delivery = 15;
-const total = subtotal + delivery;
-
+import { useCartStore } from "@/lib/store/cartStore";
+import Swal from "sweetalert2";
 export default function CartPage() {
+  const cart = useCartStore((state) => state.cart);
+  const emptyCart = useCartStore((state) => state.emptyCart);
+  const subtotal = cart.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0,
+  );
+  const delivery = 15;
+  const total = subtotal + delivery;
+
   return (
     <section className="container mx-auto px-4 py-12">
       <div className="mb-8 rounded-[2rem] border border-neutral-200 bg-red-50/70 p-8 shadow-sm shadow-red-200/40 dark:border-neutral-800 dark:bg-red-950/20">
@@ -59,7 +38,7 @@ export default function CartPage() {
                   Cart items
                 </h2>
                 <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
-                  {cartItems.length} items ready for checkout.
+                  {cart.length} items ready for checkout.
                 </p>
               </div>
               <div className="rounded-full bg-neutral-100 px-4 py-2 text-sm font-semibold text-neutral-700 dark:bg-neutral-900 dark:text-neutral-200">
@@ -69,7 +48,7 @@ export default function CartPage() {
           </div>
 
           <div className="space-y-4">
-            {cartItems.map((item) => (
+            {cart.map((item) => (
               <CartItem key={item.id} item={item} />
             ))}
           </div>
@@ -94,14 +73,36 @@ export default function CartPage() {
             <div className="mt-6 rounded-[1.25rem] bg-neutral-100 p-5 text-sm text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
               <div className="flex items-center justify-between font-semibold">
                 <span>Total</span>
-                <span>${total.toFixed(2)}</span>
+                <span>
+                  $
+                  {subtotal >= 35
+                    ? subtotal
+                    : cart.length
+                      ? total.toFixed(2)
+                      : "0"}
+                </span>
               </div>
               <p className="mt-2 text-neutral-600 dark:text-neutral-400">
                 Taxes and service fees included.
               </p>
             </div>
 
-            <button className="mt-6 w-full rounded-full bg-red-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-red-500/20 transition hover:bg-red-600">
+            <button
+              className="mt-6 w-full rounded-full bg-red-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-red-500/20 transition hover:bg-red-600"
+              onClick={() => {
+                subtotal
+                  ? Swal.fire({
+                      title: "Order Placed!",
+                      text: "Thank you for your purchase.",
+                      icon: "success",
+                      color: "#ffffff",
+                      background: "#838383",
+                      confirmButtonColor: "#f54242",
+                    })
+                  : "";
+                emptyCart();
+              }}
+            >
               Proceed to Checkout
             </button>
           </div>

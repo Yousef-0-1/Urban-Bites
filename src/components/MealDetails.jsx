@@ -2,18 +2,16 @@
 import Image from "next/image";
 import { useState } from "react";
 import { FaStar, FaStarHalf } from "react-icons/fa";
-
+import { useCartStore } from "@/lib/store/cartStore";
 export default function MealDetails({ meal }) {
   const [amount, setAmount] = useState(1);
-
   function decreaseAmount() {
     setAmount((a) => Math.max(1, a - 1));
   }
-
   function increaseAmount() {
     setAmount((a) => a + 1);
   }
-
+  const addToCart = useCartStore((state) => state.addToCart);
   return (
     <section className="mx-auto grid w-full max-w-6xl gap-8 px-4 py-12 lg:grid-cols-2">
       <div className="relative self-start overflow-hidden rounded-[2rem] bg-gradient-to-br from-red-100 via-white to-neutral-100 p-6 shadow-[0_25px_70px_-35px_rgba(0,0,0,0.35)] dark:from-red-950/40 dark:via-neutral-950 dark:to-neutral-900">
@@ -117,7 +115,10 @@ export default function MealDetails({ meal }) {
               </button>
             </div>
 
-            <button className="rounded-[1.5rem] bg-red-500 px-6 py-4 text-lg font-semibold text-white shadow-lg shadow-red-500/20 transition hover:bg-red-600">
+            <button
+              onClick={() => addToCart(meal, amount)}
+              className="rounded-[1.5rem] bg-red-500 px-6 py-4 text-lg font-semibold text-white shadow-lg shadow-red-500/20 transition hover:bg-red-600"
+            >
               Add To Cart
             </button>
 

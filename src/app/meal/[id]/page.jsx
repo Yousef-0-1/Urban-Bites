@@ -1,5 +1,5 @@
 import MealDetails from "@/components/MealDetails";
-import Image from "next/image";
+
 export default async function MealPage({ params }) {
   const { id } = await params;
   const meal = await fetch(`http://localhost:3000/api/meal/${id}`).then((res) =>
