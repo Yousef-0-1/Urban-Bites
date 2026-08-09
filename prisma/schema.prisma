@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model meals {
+  id          Int         @id(map: "mytable_pkey")
+  title       String      @db.VarChar(30)
+  description String      @db.VarChar(113)
+  image       String?     @db.VarChar(44)
+  price       Int
+  rating      Decimal     @db.Decimal(3, 1)
+  calories    Int
+  featured    String      @db.VarChar(5)
+  category_id Int?
+  category_id Int
+categories  categories @relation(fields: [category_id], references: [id]), onDelete: NoAction, onUpdate: NoAction)
+}
+
+model categories {
+  id    Int     @id @default(autoincrement())
+  name  String  @unique
+  meals meals[]
+}

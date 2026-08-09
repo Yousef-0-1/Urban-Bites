@@ -1,11 +1,21 @@
 import MealDetails from "@/components/MealDetails";
-
+import prisma from "@/lib/prisma";
+import { notFound } from "next/navigation";
 export default async function MealPage({ params }) {
   const { id } = await params;
-  const meal = await fetch(`http://localhost:3000/api/meal/${id}`).then((res) =>
-    res.json(),
-  );
-
+  const meal = await prisma.meals.findUnique({
+    where: { id: Number(id) },
+    include: {
+      categories: true,
+    },
+  });
+  const formattedMeals = {
+    ...meal,
+    rating: Number(meal.rating),
+  };
+  if (!meal) {
+    notFound();
+  }
   if (!meal) {
     return <div>Loading...</div>;
   }
@@ -15,7 +25,7 @@ export default async function MealPage({ params }) {
         Meal Details
       </h1>
 
-      <MealDetails meal={meal} />
+      <MealDetails meal={formattedMeals} />
     </section>
   );
 }

@@ -3,32 +3,32 @@ const categories = [
   {
     icon: "🍔",
     title: "Burgers",
-    link: "/categories/burgers",
+    link: "/categories/Burgers",
   },
   {
     icon: "🍕",
     title: "Pizzas",
-    link: "/categories/pizzas",
+    link: "/categories/Pizzas",
   },
   {
     icon: "🥗",
     title: "Salads",
-    link: "/categories/salads",
+    link: "/categories/Salads",
   },
   {
     icon: "🍣",
     title: "Sushi",
-    link: "/categories/sushi",
+    link: "/categories/Sushi",
   },
   {
     icon: "🍝",
     title: "Pasta",
-    link: "/categories/pasta",
+    link: "/categories/Pasta",
   },
   {
     icon: "🍰",
     title: "Desserts",
-    link: "/categories/desserts",
+    link: "/categories/Desserts",
   },
 ];
 

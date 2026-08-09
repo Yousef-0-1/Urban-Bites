@@ -7,7 +7,7 @@ export default function Footer() {
           src="/favicon.ico"
           alt="Logo"
           width={50}
-          height={20}
+          height={50}
           className=" block lg:hidden"
         />
         <p>
@@ -17,18 +17,17 @@ export default function Footer() {
           src="/favicon.ico"
           alt="Logo"
           width={50}
-          height={20}
+          height={50}
           className="hidden lg:block"
         />
         <div className="policies">
           {["Privacy", "Policy", "Terms", "Services"].map((item) => (
-            <a
+            <span
               key={item}
-              href={`/${item.toLowerCase()}`}
-              className="text-gray-400 hover:text-white mx-2"
+              className="text-gray-400 hover:text-white mx-2 cursor-pointer"
             >
               {item}
-            </a>
+            </span>
           ))}
         </div>
       </div>
